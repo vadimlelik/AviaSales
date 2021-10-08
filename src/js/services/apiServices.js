@@ -12,7 +12,7 @@ class Api {
       const response = await axios.get(`${this.url}/countries`)
       return response.data
 
-      console.log(response);
+
     } catch (error) {
       console.log(error);
       return Promise.reject(error)
@@ -23,13 +23,13 @@ class Api {
       const response = await axios.get(`${this.url}/cities`)
       return response.data
 
-      console.log(response);
+
     } catch (error) {
       console.log(error);
       return Promise.reject(error)
     }
   }
-  prices(params) { }
+  async prices(params) { }
 
 }
 
